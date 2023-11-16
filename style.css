@@ -1,6 +1,7 @@
 :root {
   --bg-cream-color: hsl(30, 38%, 92%);
   --bg-green-color: hsl(158, 36%, 37%);
+  --bg-dark-green-color:hsl(158deg 35.45% 25.77%);
   --grey-color: hsl(228, 12%, 48%);
   --dark-blue-color: hsl(212, 21%, 14%);
   --bg-white-color: hsl(0, 0%, 100%);
@@ -63,6 +64,7 @@ h1 {
 }
 
 .price-container {
+  font-family: "Fraunces", sans-serif;
   display: flex;
   gap: 1em;
   align-items: center;
@@ -96,12 +98,16 @@ h1 {
   border: none;
   font-size: 1em;
   font-weight: 700;
-  cursor: pointer;
   text-decoration: none;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+}
+
+.cart-btn:hover{
+  cursor: pointer;
+  background-color: var(--bg-dark-green-color);
 }
 
 .old-price {
